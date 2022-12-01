@@ -1,0 +1,1 @@
+   $('.content').toggleClass('content_active'); //Сдвиг контента при выпадании меню бокового (js)

@@ -1,0 +1,142 @@
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    font-family:"Courier New";
+}
+.main{
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+}
+.motiv{
+    font-size: 40px;
+    box-sizing: border-box;
+    transform-style: inherit;
+    width: 100%;
+    padding-top: 270px;
+    text-align: center;
+    color: #000000;
+    background-image: url("https://phonoteka.org/uploads/posts/2021-05/1621006563_8-phonoteka_org-p-fon-dlya-prezentatsii-trenazhernogo-zala-12.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* Параллакс эффект*/
+    /* фоновая картинка */
+
+    /* высота прокрутки картинки */
+    min-height: 600px;
+
+    /* привязываем фоновую картинку, чтобы она не двигалась */
+    background-attachment: fixed;
+    /* размещаем её по центру */
+    background-position: center;
+    /* выключаем повторения картинки */
+    background-repeat: no-repeat;
+    /* подгоняем масштаб картинки под размер блока, в котором она лежит */
+    background-size: cover;
+
+}
+
+.news{
+    background-color: #ffeaa7c2;
+    flex-direction: column;
+    margin: 0;
+    height: 50vh;
+
+}
+.text1{
+    margin-top:50px;
+    font-size: 50px;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+}
+.opis{
+    font-size: 40px;
+    margin-top:60px;
+    margin-left: 100px;
+    display: block;
+
+}
+.opis2{
+    font-size: 50px;
+    margin-top:40px;
+    max-width: 70px;
+    height: 50px;
+}
+.opis3{
+    margin-right: 70px;
+    margin-top: 100px;
+    font-size: 23px;
+}
+.cartt{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    margin-top: 70px;
+    margin-left: 20px;
+}
+.contacts{
+    background-color: #a989ffb3;
+}
+.portfolio{
+    background-color: #ffc2a7b8;
+    flex-direction: column;
+    margin: 0;
+    height: 120vh;
+}
+.wrapper {
+    position: relative;
+    overflow-x: hidden;
+}
+.menu {
+    position: fixed;
+    left: 0;top: 0;
+    z-index: 99;
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    transform: translateX(-100%);
+    background-image: linear-gradient(#ffeaa7, #a29bfe);;
+    font-family:"Courier New";
+    font-size: 20px;
+}
+.menu_active {
+    transform: translateX(0%);
+}
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50%;
+    flex-direction: column;
+
+}
+.menu-list a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #000000;
+}
+.menu-btn {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: -45px;
+    top: 10px;
+}
+.content {
+    transition: 0.5s;
+    position: relative;
+    z-index: 0;
+}
+.content_active {
+    transform: translateX(15%);
+}
+
